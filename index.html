@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Poké API</title>
+</head>
+<body>
+
+    <main>
+       <section>
+            <div class="form">
+                <label for="nome-pokemon"></label>
+                <input type="number" name="nome-pokemon" id="nome-pokemon" placeholder="Digite o ID Do Pokémon">
+                <button id="buscar-pokemon" class="buscar-pokemon">Buscar Pokémon</button>
+            </div>
+
+
+           <div class="container">
+               <h2 id="nome">Nome Do Pokémon</h2>
+               <h1><img class="fundo-branco" id="imagem-pokemon" src="img/fundo-branco.png"></h1>
+               <div class="habilidades">
+                <h3 class="titulo-poderes">Poderes</h3>
+                <p id="poder1" class="poder">teste</p>
+                <p id="poder2" class="poder">teste</p>
+               </div>
+               <h3 id="id-pokemon">ID Do Pokémon</h3>
+           </div>
+       </section> 
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

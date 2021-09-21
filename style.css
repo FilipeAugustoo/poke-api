@@ -1,0 +1,65 @@
+body {
+    background-image: url('img/fundo-site.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    background-color: white;
+    width: 25%;
+    height: 753px;
+}
+
+.form {
+    text-align: center;  
+}
+
+.form input {
+    width: 75%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#nome-pokemon {
+    text-align: center;
+    font-size: 25px;
+}
+
+#nome {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+#imagem-pokemon {
+    width: 80%; 
+    margin-left: 12%;
+}
+
+#id-pokemon {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 110px;
+}
+
+.habilidades {
+    text-align: center;
+}
+
+.titulo-poderes {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.poder {
+    margin-top: 5px;
+    font-size: 20px;
+}

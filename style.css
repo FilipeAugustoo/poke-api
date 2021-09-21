@@ -1,13 +1,19 @@
 body {
     background-image: url('img/fundo-site.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
 }
 
 section {
     background-color: white;
     width: 25%;
-    height: 753px;
+    height: 100vh;
 }
 
 .form {
@@ -62,4 +68,56 @@ section {
 .poder {
     margin-top: 5px;
     font-size: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    section {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    section {
+        width: 50%;
+    }
+
+    #id-pokemon {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .poder {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        background-size: cover;
+    }
+
+    section {
+        width: 50%;
+    }
+
+    .form input {
+        height: 40px;
+    }
+
+    .form button {
+        font-size: 30px;
+    }
+
+    .poder {
+        font-size: 40px;
+    }
+
+    .titulo-poderes {
+        font-size: 60px;
+    }
+
+    #id-pokemon {
+        font-size: 40px;
+    }
 }

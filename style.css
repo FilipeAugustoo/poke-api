@@ -1,123 +1,113 @@
-body {
+html, body {
     background-image: url('img/fundo-site.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    height: 100vh;
+    background-size:cover;
+    background-position: right;
+    height: 100%;
 }
 
 main {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-section {
-    background-color: white;
-    width: 25%;
-    height: 100vh;
+.container {
+    backdrop-filter: saturate(180%) blur(10px);
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    width: 50%;
+    height: 75%;
+    justify-items: center;
+    align-items: center;
+    align-content: space-between;
+    border-radius: 10px;
 }
 
 .form {
-    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.form input {
-    width: 75%;
-    margin-top: 15px;
+.textos {
     text-align: center;
+    font-size: 2rem;
 }
 
-.form button {
-    margin-top: 10px;
-    padding: 5px;
-    background-color: orange;
-    font-weight: bold;
+.id-pokemon {
+    margin-bottom: 10%;
+}
+
+.input-pokemon {
+    margin: 5%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.input-pokemon:focus {
+    outline: none;
+}
+
+.input-pokemon::placeholder {
+    color: black;
+}
+
+.buscar-pokemon {
+    border: none;
+    background-color: orangered;
+    font-size: 1.5rem;
+    padding: 2%;
     border-radius: 5px;
 }
 
-#nome-pokemon {
-    text-align: center;
-    font-size: 25px;
+.info-pokemons {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
-#nome {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 50px;
+.img-pokemon {
+    width: 50%;
 }
 
-#imagem-pokemon {
-    width: 80%; 
-    margin-left: 12%;
+.poder, .nome {
+    text-transform: uppercase;
 }
 
-#id-pokemon {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 110px;
+.titulo-poderes, .nome {
+    font-size: 2.5rem;
 }
 
-.habilidades {
-    text-align: center;
+.before {
+    font-size: 0;
 }
 
-.titulo-poderes {
-    font-size: 40px;
-    margin: 0 auto;
-}
+@media screen and (max-width: 480px) {
+    .container {
+        height: 80%;
+    }
 
-.poder {
-    margin-top: 5px;
-    font-size: 20px;
-}
+    .textos {
+        font-size: 1.2rem;
+    }
 
-@media screen and (min-width: 320px) and (max-width: 426px) {
-    section {
-        width: 75%;
-        margin: 0 auto;
+    .titulo-poderes, .nome {
+        font-size: 1.5rem;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    section {
-        width: 50%;
-    }
-
-    #id-pokemon {
-        margin-top: 50px;
-        font-size: 30px;
-    }
-
-    .poder {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    body {
-        background-size: cover;
-    }
-
-    section {
-        width: 50%;
-    }
-
-    .form input {
-        height: 40px;
-    }
-
-    .form button {
-        font-size: 30px;
-    }
-
-    .poder {
-        font-size: 40px;
-    }
-
-    .titulo-poderes {
-        font-size: 60px;
-    }
-
-    #id-pokemon {
-        font-size: 40px;
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
     }
 }

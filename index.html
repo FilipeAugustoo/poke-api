@@ -12,23 +12,27 @@
 <body>
 
     <main>
-       <section>
+       <section class="container">
             <div class="form">
-                <label for="nome-pokemon"></label>
-                <input type="number" name="nome-pokemon" id="nome-pokemon" placeholder="Digite o ID Do Pokémon">
+                <input 
+                    type="number" 
+                    name="nome-pokemon" 
+                    id="nome-pokemon" 
+                    placeholder="Digite o ID Do Pokémon"
+                    class="input-pokemon"
+                >
                 <button id="buscar-pokemon" class="buscar-pokemon">Buscar Pokémon</button>
             </div>
 
 
-           <div class="container">
-               <h2 id="nome">Nome Do Pokémon</h2>
-               <h1><img class="fundo-branco" id="imagem-pokemon" src="img/fundo-branco.png"></h1>
+           <div class="info-pokemons">
+               <h2 class="textos nome" id="nome"></h2>
+               <img class="img-pokemon" id="imagem-pokemon" src="">
                <div class="habilidades">
-                <h3 class="titulo-poderes">Poderes</h3>
-                <p id="poder1" class="poder"></p>
-                <p id="poder2" class="poder"></p>
+                <h3 id="poderes" class="titulo-poderes textos before">Poderes</h3>
+                <p id="poder1" class="poder textos"></p>
+                <p id="poder2" class="poder textos"></p>
                </div>
-               <h3 id="id-pokemon">ID Do Pokémon</h3>
            </div>
        </section> 
     </main>

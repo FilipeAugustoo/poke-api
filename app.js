@@ -1,7 +1,11 @@
 var botaoBuscar = document.querySelector('#buscar-pokemon');
 var idPokemonClient = document.querySelector('#nome-pokemon');
+var poderes = document.getElementById('poderes')
 
 botaoBuscar.addEventListener('click', function() {
+
+    poderes.classList.remove('before');
+
     var teste = idPokemonClient.value
 
     var url = 'https://pokeapi.co/api/v2/pokemon/' + teste;
@@ -17,7 +21,6 @@ botaoBuscar.addEventListener('click', function() {
 
             var nome = data['name']
             var imagem = data['sprites']['front_default']
-            var idPokemon = data['id']
             if (data['abilities'].length >= 2) {
                 var poder1 = data['abilities']['0']['ability']['name']
                 var poder2 = data['abilities']['1']['ability']['name']
@@ -29,7 +32,6 @@ botaoBuscar.addEventListener('click', function() {
 
             document.querySelector('#nome').innerHTML = nome;
             document.querySelector('#imagem-pokemon').setAttribute('src', imagem);
-            document.querySelector('#id-pokemon').innerHTML = idPokemon;
             document.querySelector('#poder1').innerHTML = poder1;
             document.querySelector('#poder2').innerHTML = poder2;
         })

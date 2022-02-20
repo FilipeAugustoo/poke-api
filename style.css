@@ -77,7 +77,7 @@ main {
 }
 
 .img-pokemon {
-    width: 50%;
+    width: 40%;
 }
 
 .poder, .nome {
@@ -104,10 +104,18 @@ main {
     .titulo-poderes, .nome {
         font-size: 1.5rem;
     }
+
+    .img-pokemon {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .container {
         width: 90%;
+    }
+
+    .img-pokemon {
+        width: 55%;
     }
 }

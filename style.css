@@ -56,7 +56,7 @@ main {
 }
 
 .input-pokemon::placeholder {
-    color: black;
+    color: white;
 }
 
 .buscar-pokemon {

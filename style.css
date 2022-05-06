@@ -45,10 +45,11 @@ main {
     margin: 5%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     width: 50%;
     text-align: center;
     font-size: 1.5rem;
+    color: white;
 }
 
 .input-pokemon:focus {
